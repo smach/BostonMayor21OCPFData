@@ -1,0 +1,21 @@
+Package: BostonMayor21OCPFData
+Type: Package
+Title: Download Campaign Contribution Data from Mass Office of Campaign and Political Finance
+Version: 0.1.0
+Author: Sharon Machlis
+Maintainer: Sharon Machlis <r4journos@machlis.com>
+Description: Downloads data from Mass Office of Campaign Finance based on Candidate IDs
+    Returns data in tidy format
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Imports: 
+    dplyr,
+    stringr,
+    magrittr,
+    data.table,
+    lubridate,
+    purrr
+RoxygenNote: 7.1.1
+Depends: 
+    R (>= 2.10)
