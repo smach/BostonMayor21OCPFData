@@ -10,7 +10,7 @@
 #'
 download_latest_candidate_contributions <- function(id, start_date = as.Date("2020-02-01"), boston_zips = known_boston_zipcodes) {
   url <- paste0("https://www.ocpf.us/ReportData/GetTextOutput?1=1&searchTypeCategory=A&filerCpfId=", id, "&sortField=Date&sortDirection=ASC")
-  the_file <- paste0("tmp/contributions_", id, "_", Sys.Date() )
+  the_file <- paste0("tmp/contributions_", "_", id, ".zip" )
   download.file(url, destfile = the_file )
   the_data <- data.table::fread(the_file, colClasses = c(`Zip Code` = "character"))
   if(!is.null(start_date)) {
